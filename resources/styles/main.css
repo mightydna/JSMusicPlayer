@@ -33,9 +33,15 @@ main {
     border-radius: 20px;
     width: 350px;
 }
+#song_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #song_img {
     margin: 20px 20px 16px 20px;
     border-radius: 20px;
+    width: 305px;
 }
 #song_data {
     display: flex;
@@ -82,20 +88,33 @@ main {
     font-family: 'Inter';
 }
 #bar {
+    position: relative;
     display: flex;
     flex-direction: row;
 }
 #prg_bar {
-    width: 200px;
+    width: 100%;
     height: 4px;
     background-color: #E5E7EB;
     border-radius: 2px;
+    position: absolute;
+    z-index: 1;
 }
 #prg_bar_fill {
-    width: 100px;
+    width: 0px;
     height: 4px;
     background-color: #C93B76;
     border-radius: 2px;
+    position: absolute;
+    z-index: 2;
+}
+#prg_drag {
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 30;
 }
 #controls {
     display: flex;
@@ -108,10 +127,17 @@ main {
 #play_back {
     cursor: pointer;
     color: #4D5562;
+    width: 32px;
+    height: 50px;
 }
 #play {
     align-items: center;
     justify-content: center;
+}
+#pause {
+    height: 20px;
+    width: 20px;
+    filter: brightness(0) saturate(100%) invert(99%) sepia(4%) saturate(885%) hue-rotate(178deg) brightness(92%) contrast(101%);
 }
 #play_bg {
     height: 50px;
@@ -126,4 +152,6 @@ main {
 #play_next {
     cursor: pointer;
     color: #4D5562;
+    width: 32px;
+    height: 50px;
 }
