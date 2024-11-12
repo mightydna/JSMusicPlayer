@@ -15,6 +15,8 @@ body {
     margin: 0px;
     padding: 0px;
     background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,9 +31,10 @@ main {
 #player {
     display: flex;
     flex-direction: column;
-    background-color: rgba(33, 41, 54, 0.7);
+    background-color: rgba(18, 24, 38, 0.6);
     border-radius: 20px;
     width: 350px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 #song_container{
     display: flex;
@@ -40,7 +43,7 @@ main {
 }
 #song_img {
     margin: 20px 20px 16px 20px;
-    border-radius: 20px;
+    border-radius: 16px;
     width: 305px;
 }
 #song_data {
@@ -56,7 +59,8 @@ main {
     font-size: 16px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #artist_name {
     padding: 0px;
@@ -81,11 +85,13 @@ main {
     color: #4D5562;
     font-size: 10px;
     font-family: 'Inter';
+    font-weight: 600;
 }
 #duration {
     color: #4D5562;
     font-size: 10px;
     font-family: 'Inter';
+    font-weight: 600;
 }
 #bar {
     position: relative;
@@ -107,6 +113,7 @@ main {
     border-radius: 2px;
     position: absolute;
     z-index: 2;
+    filter: drop-shadow(0 0 0.25rem #c93b76);
 }
 #prg_drag {
     height: 4px;
@@ -148,6 +155,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    filter: drop-shadow(0 0 0.25rem #c93b76);
 }
 #play_next {
     cursor: pointer;
