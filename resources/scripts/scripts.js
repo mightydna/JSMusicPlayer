@@ -37,7 +37,7 @@ function playMusic() {
         <div id="controls">
                 <img src="resources/icons/Stop_and_play_fill-1.svg" title="" alt="" id="play_back" onclick="restartSong()">
                 <div id="play_bg">
-                    <img src="resources/icons/Play_fill.svg" title="" alt="" id="play" onclick="playMusic()">
+                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" onclick="playMusic()">
                 </div>
                 <img src="resources/icons/Stop_and_play_fill.svg" title="" alt="" id="play_next" onclick="nextSong()">
             </div>
@@ -48,7 +48,7 @@ function playMusic() {
         <div id="controls">
                 <img src="resources/icons/Stop_and_play_fill-1.svg" title="" alt="" id="play_back" onclick="restartSong()">
                 <div id="play_bg">
-                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" onclick="playMusic()">
+                    <img src="resources/icons/Play_fill.svg" title="" alt="" id="play" onclick="playMusic()">
                 </div>
                 <img src="resources/icons/Stop_and_play_fill.svg" title="" alt="" id="play_next" onclick="nextSong()">
             </div>
@@ -59,6 +59,15 @@ function playMusic() {
 function restartSong() {
     if(currentSongIndex == 0){
         currentSong.currentTime = 0;
+        controls.innerHTML = `
+        <div id="controls">
+                <img src="resources/icons/Stop_and_play_fill-1.svg" title="" alt="" id="play_back" onclick="restartSong()">
+                <div id="play_bg">
+                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" onclick="playMusic()">
+                </div>
+                <img src="resources/icons/Stop_and_play_fill.svg" title="" alt="" id="play_next" onclick="nextSong()">
+            </div>
+        `;
     } else {
         currentSong.pause();
         currentSong.currentTime = 0;
@@ -82,7 +91,7 @@ function restartSong() {
         <div id="controls">
                 <img src="resources/icons/Stop_and_play_fill-1.svg" title="" alt="" id="play_back" onclick="restartSong()">
                 <div id="play_bg">
-                    <img src="resources/icons/Play_fill.svg" title="" alt="" id="play" onclick="playMusic()">
+                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" onclick="playMusic()">
                 </div>
                 <img src="resources/icons/Stop_and_play_fill.svg" title="" alt="" id="play_next" onclick="nextSong()">
             </div>
@@ -111,6 +120,15 @@ function nextSong() {
                 </div>
             </div>
         `;
+        controls.innerHTML = `
+        <div id="controls">
+                <img src="resources/icons/Stop_and_play_fill-1.svg" title="" alt="" id="play_back" onclick="restartSong()">
+                <div id="play_bg">
+                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" onclick="playMusic()">
+                </div>
+                <img src="resources/icons/Stop_and_play_fill.svg" title="" alt="" id="play_next" onclick="nextSong()">
+            </div>
+        `;
         currentSong.play();
     } else {
         currentSong.pause();
@@ -135,7 +153,7 @@ function nextSong() {
         <div id="controls">
                 <img src="resources/icons/Stop_and_play_fill-1.svg" title="" alt="" id="play_back" onclick="restartSong()">
                 <div id="play_bg">
-                    <img src="resources/icons/Play_fill.svg" title="" alt="" id="play" onclick="playMusic()">
+                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" onclick="playMusic()">
                 </div>
                 <img src="resources/icons/Stop_and_play_fill.svg" title="" alt="" id="play_next" onclick="nextSong()">
             </div>
