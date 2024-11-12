@@ -1,5 +1,5 @@
 /* Variablen */
-let playButton = document.querySelector("#play");
+let playButton = document.querySelector("#play_bg");
 let playBack = document.querySelector("#play_back");
 let playNext = document.querySelector("#play_next");
 let song1 = new Audio("resources/audio/lost-in-city-lights-145038.mp3");
@@ -36,8 +36,8 @@ function playMusic() {
         controls.innerHTML = `
         <div id="controls">
                 <img src="resources/icons/Stop_and_play_fill-1.svg" title="" alt="" id="play_back" onclick="restartSong()">
-                <div id="play_bg">
-                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" onclick="playMusic()">
+                <div id="play_bg" onclick="playMusic()">
+                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" >
                 </div>
                 <img src="resources/icons/Stop_and_play_fill.svg" title="" alt="" id="play_next" onclick="nextSong()">
             </div>
@@ -47,8 +47,8 @@ function playMusic() {
         controls.innerHTML = `
         <div id="controls">
                 <img src="resources/icons/Stop_and_play_fill-1.svg" title="" alt="" id="play_back" onclick="restartSong()">
-                <div id="play_bg">
-                    <img src="resources/icons/Play_fill.svg" title="" alt="" id="play" onclick="playMusic()">
+                <div id="play_bg" onclick="playMusic()">
+                    <img src="resources/icons/Play_fill.svg" title="" alt="" id="play" >
                 </div>
                 <img src="resources/icons/Stop_and_play_fill.svg" title="" alt="" id="play_next" onclick="nextSong()">
             </div>
@@ -62,8 +62,8 @@ function restartSong() {
         controls.innerHTML = `
         <div id="controls">
                 <img src="resources/icons/Stop_and_play_fill-1.svg" title="" alt="" id="play_back" onclick="restartSong()">
-                <div id="play_bg">
-                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" onclick="playMusic()">
+                <div id="play_bg" onclick="playMusic()">
+                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" >
                 </div>
                 <img src="resources/icons/Stop_and_play_fill.svg" title="" alt="" id="play_next" onclick="nextSong()">
             </div>
@@ -90,8 +90,8 @@ function restartSong() {
         controls.innerHTML = `
         <div id="controls">
                 <img src="resources/icons/Stop_and_play_fill-1.svg" title="" alt="" id="play_back" onclick="restartSong()">
-                <div id="play_bg">
-                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" onclick="playMusic()">
+                <div id="play_bg" onclick="playMusic()">
+                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" >
                 </div>
                 <img src="resources/icons/Stop_and_play_fill.svg" title="" alt="" id="play_next" onclick="nextSong()">
             </div>
@@ -123,8 +123,8 @@ function nextSong() {
         controls.innerHTML = `
         <div id="controls">
                 <img src="resources/icons/Stop_and_play_fill-1.svg" title="" alt="" id="play_back" onclick="restartSong()">
-                <div id="play_bg">
-                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" onclick="playMusic()">
+                <div id="play_bg" onclick="playMusic()">
+                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" >
                 </div>
                 <img src="resources/icons/Stop_and_play_fill.svg" title="" alt="" id="play_next" onclick="nextSong()">
             </div>
@@ -152,8 +152,8 @@ function nextSong() {
         controls.innerHTML = `
         <div id="controls">
                 <img src="resources/icons/Stop_and_play_fill-1.svg" title="" alt="" id="play_back" onclick="restartSong()">
-                <div id="play_bg">
-                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" onclick="playMusic()">
+                <div id="play_bg" onclick="playMusic()">
+                    <img src="resources/icons/pause-button-svgrepo-com.svg" title="" alt="" id="pause" >
                 </div>
                 <img src="resources/icons/Stop_and_play_fill.svg" title="" alt="" id="play_next" onclick="nextSong()">
             </div>
