@@ -26,6 +26,7 @@ currentSong.addEventListener("timeupdate", updateProgress);
 currentSong.addEventListener("canplay", () => {
     durationDisplay.textContent = formatTime(currentSong.duration);
 });
+currentSong.addEventListener("ended", nextSong);
 progressBar.addEventListener("click", progressClick);
 
 /* Functions */
@@ -78,6 +79,7 @@ function restartSong() {
         currentSong.addEventListener("canplay", () => {
             durationDisplay.textContent = formatTime(currentSong.duration);
         });
+        currentSong.addEventListener("ended", nextSong);
         songContainer.innerHTML = `
         <div id="song_container">
                 <img src="resources/images/cover-1.png" title="" alt="" id="song_img">
@@ -110,7 +112,8 @@ function nextSong() {
         currentSong.addEventListener("timeupdate", updateProgress);
         currentSong.addEventListener("canplay", () => {
             durationDisplay.textContent = formatTime(currentSong.duration);
-        });  
+        });
+        currentSong.addEventListener("ended", nextSong);
         songContainer.innerHTML = `
         <div id="song_container">
                 <img src="resources/images/cover-1.png" title="" alt="" id="song_img">
@@ -140,6 +143,7 @@ function nextSong() {
         currentSong.addEventListener("canplay", () => {
             durationDisplay.textContent = formatTime(currentSong.duration);
         });
+        currentSong.addEventListener("ended", nextSong);
         songContainer.innerHTML = `
         <div id="song_container">
                 <img src="resources/images/cover-2.png" title="" alt="" id="song_img">
